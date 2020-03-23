@@ -14,7 +14,7 @@ package object logics {
    *  [error]  required: (problem.LogService, problem.LogService) => problem.LogicsService
    *  [error]     (log: LogService, store: StoreService) =>
    *
-   * WTF????
+   * WTF????  
    */
   val liveFromServices: ZLayer[Log with Store, Nothing, Logics] = ZLayer.fromServices {
     (log: LogService, store: StoreService) =>
